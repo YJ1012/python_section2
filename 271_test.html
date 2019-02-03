@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <script id="adfitScript" src="//t1.daumcdn.net/adfit/static/ad.min.js">
+  </script>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <link href="http://finance.daum.net/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <title>
+   Daum 금융
+  </title>
+  <link href="/dist/common.css?v=1547628623" rel="stylesheet" type="text/css"/>
+  <link href="/dist/custom.ui.css?v=1547628623" rel="stylesheet" type="text/css"/>
+  <script async="" src="https://www.google-analytics.com/analytics.js" type="text/javascript">
+  </script>
+  <script>
+   window.REQUEST_URI = '/home';
+    window.CURRENT_URL = encodeURIComponent(
+        "".concat(
+            window.location.protocol,
+            "//",
+            window.location.host,
+            window.location.pathname,
+            window.location.search
+        )
+    );
+    window.FINANCE = {};
+    window.FINANCE.BASE_URL = '/dist';
+    window.FINANCE.VERSION = '1547628623';
+    window.FINANCE.API_URL = '';
+    window.FINANCE.HOST = 'http://finance.daum.net';
+    window._REALTIME_HOST = 'http://realtime-front-df.dunamu.com';
+    window._WISE_FN_HOST = 'http://wisefn.stock.daum.net/v1';
+    window._PERIOD = '';
+  </script>
+  <script src="/dist/requirejs/require.js?v=1547628623" type="text/javascript">
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-128578811-1">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128578811-1');
+  </script>
+  <!--[if lt IE 9]> <script type="text/javascript" src="/dist/html5.js?v=1547628623"></script> <![endif]-->
+  <link href="/dist/layerpopup.css?v=1547628623" rel="stylesheet" type="text/css"/>
+  <script async="" charset="utf-8" data-requirecontext="_" data-requiremodule="/dist/daum/app/config.js?v=1547628623" src="/dist/daum/app/config.js?v=1547628623" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" data-requirecontext="_" data-requiremodule="app/common/search" src="/dist/daum/./app/common/search.js?v=1547628623" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" data-requirecontext="_" data-requiremodule="app/common/kakaostock" src="/dist/daum/./app/common/kakaostock.js?v=1547628623" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" data-requirecontext="_" data-requiremodule="app/home/index" src="/dist/daum/./app/home/index.js?v=1547628623" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" data-requirecontext="_" data-requiremodule="app/common/mini_daum" src="/dist/daum/./app/common/mini_daum.js?v=1547628623" type="text/javascript">
+  </script>
+  <script async="" charset="utf-8" data-requirecontext="_" data-requiremodule="dnm-slider" src="/javascripts/DnmSlider.js?v=1547628623" type="text/javascript">
+  </script>
+  <script async="" src="http://go.daum.net/jsa_minidaum_pc.daum" type="text/javascript">
+  </script>
+  <script charset="utf-8" src="http://s1.daumcdn.net/svc/original/U03/cssjs/minidaum/pc/minidaum-f.white.min.js" type="text/javascript">
+  </script>
+  <style>
+   /* minidaum common */
+#wrapMinidaum {z-index:999999;height:34px;font-size:12px;line-height:1.5;color:#333;text-align:left}
+#minidaum ol, #minidaum ul, #minidaum li {list-style:none}
+#minidaum img, #minidaum fieldset {border:0;padding:0}
+#minidaum img {vertical-align:top}
+#minidaum p {margin:0;padding:0}
+#minidaum a {font-family:"돋움",dotum,sans-serif;text-decoration:none}
+#minidaum a:active, #minidaum a:hover {text-decoration:underline}
+#wrapMinidaum .screen_out {display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px}
+#minidaum {position:absolute;top:0;left:0;width:100%;height:34px;letter-spacing:-1px}
+#minidaum #minidaumStart {float:left;line-height:17px;margin:7px 17px 0 0;color:#818388}
+#minidaum #minidaumStart.show {display:block}
+.minidaum_gnb {float:right;margin-top:6px;line-height:15px}
+*:first-child+html .minidaum_gnb {line-height:14px}
+#minidaumUser {position:relative;float:left;margin-right:2px}
+#minidaum .minidaum_login #btnMinidaumLogin {display:none}
+#minidaumUserLayer {display:none;position:absolute;top:18px;right:9px;width:80px;font-size:12px;background:#fff none;border:1px solid #444}
+#minidaumUserLayer.minidaumUserLayer_open {display:block;overflow:hidden;z-index:999999}
+#minidaumUserLayer a {font-size:12px;color:#333}
+#minidaumUserLayer .minidaum_logout {height:19px;padding-top:5px;padding-left:10px;background:#f4f5f7 none}
+#minidaumUserLayer .minidaum_logout a {font-weight:bold}
+#minidaumUserLayer .minidaum_mylayer {padding:7px 0 7px 10px;border-top:1px solid #f1f2f4;letter-spacing:0}
+#minidaumUserLayer .minidaum_mylayer li {height:19px;line-height:19px}
+#minidaumUserLayer .minidaum_myinfo li {height:18px;line-height:18px}
+#minidaumUserLayer .minidaum_myinfo a {color:#777}
+#minidaumService {float:left;padding-top:4px}
+#minidaumService .minidaum_top_link {padding-right:1px}
+.minidaum_service_list {float:left}
+.minidaum_service_list .minidaum_news {padding-right:9px}
+.minidaum_service_list .minidaum_shopping {padding-right:8px}
+.minidaum_service_list .minidaum_new{display:inline-block;overflow:hidden;width:11px;height:12px;margin-left:3px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat -160px -270px;text-indent:-3000px;vertical-align:bottom}
+.minidaum_service_list .minidaum_count * {margin-top:0}
+#minidaumMoreLayer {display:none;position:absolute;top:27px;right:0;overflow:hidden;width:449px;height:223px;font-size:12px;background:#fff none;border:1px solid #444;letter-spacing:0}
+#minidaumMoreLayer.minidaumMoreLayer_open {display:block;z-index:999999}
+#minidaumMoreLayer .minidaum_idx {overflow:hidden;position:absolute;top:16px;width:36px;height:13px;text-indent:-9999px}
+#minidaumMoreLayer .minidaum_idx1 {left:22px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat 0 -40px}
+#minidaumMoreLayer .minidaum_idx2 {left:104px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat -40px -40px}
+#minidaumMoreLayer .minidaum_idx3 {left:194px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat -80px -40px}
+#minidaumMoreLayer .minidaum_idx4 {left:284px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat -120px -40px}
+#minidaumMoreLayer .minidaum_idx5 {left:374px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat -160px -40px}
+#minidaumMoreLayer .minidaum_list_group {float:left;width:89px;height:176px;margin-top:16px;padding-top:20px;border-left:1px solid #ebeef2}
+#minidaumMoreLayer .minidaum_list_group li {float:left;overflow:hidden;width:100%;height:22px;line-height:23px;text-indent:13px}
+#minidaumMoreLayer .minidaum_list_group1 li {float:left;overflow:hidden;width:100%;height:22px;line-height:23px;text-indent:21px}
+#minidaumMoreLayer .minidaum_list_group li a {font-size:12px;color:#333;white-space:nowrap}
+#minidaumMoreLayer .minidaum_list_group .last {height:18px}
+#minidaumMoreLayer .minidaum_list_group1 {width:89px;border:none}
+#minidaumMoreLayer .minidaum_list_group5 {width:86px}
+#minidaumMoreLayer .minidaum_list_group .minidaum_all a {padding-right:7px;color:#5279b4;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat 100% -147px;text-decoration:underline;letter-spacing:-1px}
+#minidaumMoreLayer.minidaum_custom .minidaum_idx {top:49px}
+#minidaum .minidaum_custom {height:258px}
+#minidaum .minidaum_custom .minidaum_list_group {margin-top:49px}
+#minidaumMoreLayer .minidaum_more_custom {position:absolute;top:0;left:0;overflow:hidden;width:427px;height:33px;padding-left:22px;color:#000;background:#f5f6f8 none;border-bottom:1px solid #f0f1f3}
+#minidaumMoreLayer .minidaum_more_custom a {color:#000;font-size:12px}
+#minidaumMoreLayer .minidaum_more_custom li {float:left;line-height:33px;margin-right:21px}
+#minidaumRank {float:left;position:relative;overflow:hidden;width:191px;height:19px;margin-top:9px;font-size:12px;letter-spacing:0}
+#minidaumRank .minidaum_rank_tit {display:none;height:0;line-height:0}
+#minidaumRank .minidaum_status {float:left;width:7px;height:12px;margin-right:2px;text-indent:-3000px}
+#minidaumRank .minidaum_up {background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat 0 -21px}
+#minidaumRank .minidaum_down {background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat -20px -21px}
+#minidaumRank .minidaum_keep {background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat -40px -19px}
+#minidaumRank .minidaum_new {width:22px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat -60px -20px}
+#minidaumRank .minidaum_rank_list li {float:left;width:100%;padding-left:16px;height:23px;line-height:14px}
+#minidaum .minidaum_rank_open {z-index:999999;width:190px;height:276px;margin:6px 0 0 1px;font-family:'굴림',gulim,sans-serif;border:1px solid #444;background:#fff none}
+#minidaum .minidaum_rank_open a {font-family:'굴림',gulim,sans-serif}
+#minidaum .minidaum_rank_open li {position:relative}
+#minidaum .minidaum_rank_open .num_issue {display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px}
+#minidaum .minidaum_rank_open .minidaum_rank_list {padding:11px 0 0 0;background-position:14px -158px}
+#minidaum .minidaum_rank_open .minidaum_rank_list li {padding:0 0 0 14px}
+#minidaum .minidaum_rank_open .minidaum_rank_tit {display:block;height:29px;line-height:31px;color:#565656;font-weight:bold;background:#f4f5f7;border-bottom:1px solid #dbdbdb;text-align:center;letter-spacing:-1px}
+#minidaum .minidaum_rank_open .minidaum_word {overflow:hidden;width:115px;_width:137px;margin-right:1px;padding:0 0 0 22px;font-size:12px;color:#000;letter-spacing:0}
+#minidaum .minidaum_rank_open .minidaum_dummy {display:none}
+#minidaum .minidaum_rank_open .minidaum_num {font-size:10px;color:#4c4c4c}
+#minidaum .minidaum_rank_open .minidaum_select .minidaum_word {font-weight:bold;letter-spacing:-1px}
+#minidaum .minidaum_shield {position:absolute;top:0;left:0;z-index:-1}
+#minidaum .minidaumMoreLayer_open .minidaum_shield,
+#minidaum .minidaumUserLayer_open .minidaum_shield,
+#minidaum .minidaum_rank_open .minidaum_shield {border:1px solid #fff}
+
+/* white 버전 */
+body {background:#fff url(http://i1.daumcdn.net/icon/minidaum/common/minibar_v03.gif) repeat-x}
+#btnMinidaumLogin {float:left;overflow:hidden;width:46px;height:21px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat -100px 0;text-indent:-9999px;vertical-align:bottom}
+#minidaum .minidaum_logo {display:inline;float:left;margin:7px 15px 0 4px}
+#minidaum .minidaum_logo .img_logo {display:block;overflow:hidden;width:45px;height:19px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat;text-indent:-9999px}
+.minidaum_service_list li {float:left;padding:0 8px 0 7px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat 100% -129px}
+#minidaumRank .minidaum_word {float:left;margin-top:1px;padding-right:6px;line-height:15px;color:#444;white-space:nowrap;letter-spacing:-1px}
+*:first-child+html #minidaumRank .minidaum_word {line-height:14px}
+#minidaumRank .minidaum_rank_list {float:left;width:190px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat 0 -407px}
+#minidaumRank .minidaum_num {float:left;line-height:15px;color:#666;font-size:11px;font-family:tahoma}
+#minidaumRank .minidaum_dummy {background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat 0 -407px}
+#minidaumService li a {color:#444}
+#minidaumService #minidaumMore {display:inline;float:left;padding:0 9px 0 7px;font-weight:bold;color:#444;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat 100% -75px}
+#minidaumService .minidaum_service_list .minidaum_count {padding:0 2px 0 1px;font-weight:bold;color:#3c77eb}
+#minidaumNick {padding-right:9px;line-height:17px;color:#444;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat 100% -61px}
+*:first-child+html #minidaumNick {line-height:16px}
+#minidaumUser.minidaum_login {padding-right:9px;margin-top:3px;line-height:16px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v16.png) no-repeat 100% -128px}
+  </style>
+  <script async="" src="http://t1.daumcdn.net/tiara/js/td.min.js?v=6199" type="text/javascript">
+  </script>
+ </head>
+ <body class="finance">
+  <div id="wrap">
+   <div class="header">
+    <div class="head_media f_clear">
+     <h1>
+      <a class="#gnb #default #service_finance" href="http://finance.daum.net" id="kakaoServiceLogo">
+       <span class="ir_wa">
+        금융
+       </span>
+      </a>
+     </h1>
+     <strong class="screen_out">
+      관련서비스
+     </strong>
+     <ul class="kakaoRelServices">
+      <li>
+       <a href="http://realestate.daum.net">
+        <span class="ir_wa">
+         부동산
+        </span>
+       </a>
+      </li>
+     </ul>
+     <h2 class="screen_out">
+      검색
+     </h2>
+     <div class="search_news" id="boxSearch">
+      <form action="/quotes">
+       <fieldset>
+        <legend class="screen_out">
+         검색어 입력폼
+        </legend>
+        <div class="box_searchbar" id="boxSearchbar">
+         <label class="lab_search" for="">
+          종목명, 종목코드를 입력해주세요
+         </label>
+         <input autocomplete="off" class="tf_keyword" id="inpSearchStock" maxlength="30" type="text" value=""/>
+         <button class="btn_search" id="btnSearchStock">
+          <span class="ir_wa">
+           검색
+          </span>
+         </button>
+         <span class="layerB" style="display: none">
+         </span>
+         <!-- NOTE: 검색 제안창이 addon 됩니다. -->
+         <!-- <span class="layerB" id="boxAutoComplete" ></span> -->
+        </div>
+       </fieldset>
+      </form>
+     </div>
+     <script>
+      requirejs(["/dist/daum/app/config.js?v=1547628623"], function (common) {
+        require(["app/common/search"]);
+    });
+     </script>
+    </div>
+    <div id="kakaoGnb" role="navigation">
+     <div class="inner_gnb">
+      <h2 class="screen_out">
+       금융 메인메뉴
+      </h2>
+      <ul class="gnb_comm">
+       <li class="on">
+        <a class="link_gnb link_gnb1" href="/">
+         <span class="screen_out">
+          선택됨
+         </span>
+         <span class="ir_wa">
+          홈
+         </span>
+         <span class="bar_gnb">
+          <span class="inner_bar">
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="">
+        <a class="link_gnb link_gnb2" href="/domestic">
+         <span class="ir_wa">
+          국내
+         </span>
+         <span class="bar_gnb">
+          <span class="inner_bar">
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="">
+        <a class="link_gnb link_gnb3" href="/global">
+         <span class="ir_wa">
+          해외
+         </span>
+         <span class="bar_gnb">
+          <span class="inner_bar">
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="">
+        <a class="link_gnb link_gnb4" href="/news">
+         <span class="ir_wa">
+          뉴스
+         </span>
+         <span class="bar_gnb">
+          <span class="inner_bar">
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="">
+        <a class="link_gnb link_gnb5" href="/investment">
+         <span class="ir_wa">
+          투자정보
+         </span>
+         <span class="bar_gnb">
+          <span class="inner_bar">
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="">
+        <a class="link_gnb link_gnb6" href="/talks">
+         <span class="ir_wa">
+          종목토론
+         </span>
+         <span class="bar_gnb">
+          <span class="inner_bar">
+          </span>
+         </span>
+        </a>
+       </li>
+       <li class="">
+        <a class="link_gnb link_gnb8" href="/my">
+         <span class="ir_wa">
+          MY
+         </span>
+         <span class="bar_gnb">
+          <span class="inner_bar">
+          </span>
+         </span>
+        </a>
+       </li>
+      </ul>
+      <div class="gnb_etc">
+       <ul class="gnb_with">
+        <li class="">
+         <a class="link_gnb link_gnb1" href="/exchanges">
+          <span class="ir_wa">
+           환율
+          </span>
+          <span class="bar_gnb">
+           <span class="inner_bar">
+           </span>
+          </span>
+         </a>
+        </li>
+        <li>
+         <a class="link_gnb link_gnb3" href="http://insurance.dunamu.com">
+          <span class="ir_wa">
+           보험
+          </span>
+          <span class="bar_gnb">
+           <span class="inner_bar">
+           </span>
+          </span>
+         </a>
+        </li>
+       </ul>
+       <div class="gnb_banner" id="boxKakaoStockBanner">
+        <a class="btnKakaoStockBanner" href="javascript:void(0)">
+         <span class="ir_wa">
+          쓰던 증권사 그대로, 카카오스탁
+         </span>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <script>
+    requirejs(["/dist/daum/app/config.js?v=1547628623"], function (common) {
+        require(["app/common/kakaostock"]);
+    });
+   </script>
+   <div class="stockB" id="boxTodayIndexes">
+    <div class="center">
+     <div class="stock" id="boxIndexes">
+      <div class="DOMESTIC" style="display: block;">
+       <h5>
+        <a href="/domestic/kospi">
+         코스피 지수
+         <em>
+          KOSPI
+         </em>
+        </a>
+       </h5>
+       <span class="num up" data-realtime-change-style="yes">
+        <strong data-realtime-trade-price="yes">
+         2,124.28
+        </strong>
+        <p data-realtime-change-price="yes">
+         <i>
+          ▲
+         </i>
+         17.22
+        </p>
+        <p data-realtime-change-ratio="yes">
+         +0.82%
+        </p>
+       </span>
+       <a href="/domestic/kospi">
+        <img alt="일별 차트" src="https://t1.daumcdn.net/finance/chart/kr/daumindex/i/D0011001.png"/>
+       </a>
+       <span class="txt">
+        <a href="/domestic/investors/KOSPI">
+         개인
+         <p class="down">
+          -2,100억
+         </p>
+        </a>
+        <a href="/domestic/investors/KOSPI">
+         기관
+         <p class="up">
+          996억
+         </p>
+        </a>
+        <a href="/domestic/investors/KOSPI">
+         외국인
+         <p class="up">
+          1,141억
+         </p>
+        </a>
+        <a class="nolink" href="javascript:void(0)">
+         프로그램
+         <p class="up">
+          941억
+         </p>
+        </a>
+       </span>
+      </div>
+      <div class="DOMESTIC" style="display: block;">
+       <h5>
+        <a href="/domestic/kosdaq">
+         코스닥 지수
+         <em>
+          KOSDAQ
+         </em>
+        </a>
+       </h5>
+       <span class="num up" data-realtime-change-style="yes">
+        <strong data-realtime-trade-price="yes">
+         696.34
+        </strong>
+        <p data-realtime-change-price="yes">
+         <i>
+          ▲
+         </i>
+         9.99
+        </p>
+        <p data-realtime-change-ratio="yes">
+         +1.46%
+        </p>
+       </span>
+       <a href="/domestic/kosdaq">
+        <img alt="일별 차트" src="https://t1.daumcdn.net/finance/chart/kr/daumindex/i/E4012001.png"/>
+       </a>
+       <span class="txt">
+        <a href="/domestic/investors/KOSDAQ">
+         개인
+         <p class="down">
+          -343억
+         </p>
+        </a>
+        <a href="/domestic/investors/KOSDAQ">
+         기관
+         <p class="down">
+          -139억
+         </p>
+        </a>
+        <a href="/domestic/investors/KOSDAQ">
+         외국인
+         <p class="up">
+          637억
+         </p>
+        </a>
+        <a class="nolink" href="javascript:void(0)">
+         프로그램
+         <p class="up">
+          469억
+         </p>
+        </a>
+       </span>
+      </div>
+     </div>
+     <div class="stockTab" id="boxIndexTabs">
+      <span>
+       <h4>
+        오늘의 증시
+       </h4>
+       <p id="labTodayDate">
+        <em>
+         01.18
+        </em>
+        장종료
+       </p>
+       <p id="labGlobalTodayDate">
+        현지시간 기준
+       </p>
+      </span>
+      <ul>
+       <li>
+        <a class="on" data-type="DOMESTIC" href="javascript:void(0)" title="국내 지수">
+         국내 지수
+        </a>
+       </li>
+       <li>
+        <a data-type="USA" href="javascript:void(0)" title="미국 지수">
+         미국 지수
+        </a>
+       </li>
+       <li>
+        <a data-type="ASIA" href="javascript:void(0)" title="아시아 지수">
+         아시아 지수
+        </a>
+       </li>
+       <li>
+        <a data-type="EUROPE" href="javascript:void(0)" title="유럽 지수">
+         유럽 지수
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="mainB">
+    <div class="leftW">
+     <div class="topNews" id="boxTodayNews">
+      <div class="titB">
+       <h4>
+        오늘의 뉴스
+       </h4>
+       <a class="btnMore" href="/news" title="더보기">
+        더보기
+       </a>
+      </div>
+      <div class="f_clear">
+       <div class="txtB">
+        <a class="tit" href="/news/20190118155322333">
+         [마감시황]국내 증시 상승세 이어가..코스피 2,124선 회복
+        </a>
+        <a class="txt" href="/news/20190118155322333">
+         [서울경제] 18일 국내 증시가 미국과 중국 간 갈등 완화, 중국 경기 부양 기대감 등에 상승세를 이어갔다. 코스피 지수는 2,120선을 약 한 달 반 만에 회복했다.이날 코스피 지수는 전날보다 17.22포인트(0.82%) 상승한 2,124.28에 장 ...
+        </a>
+        <span class="offerer">
+         <a href="#">
+          서울경제
+         </a>
+        </span>
+       </div>
+      </div>
+      <div class="halfB">
+       <!-- 글자 수 제한 -->
+       <ul class="fl">
+        <li>
+         <a href="/news/20190118153557763">
+          [마감 시황] 코스피 전일 대비 17. ...
+         </a>
+         <em>
+          한국경제TV
+         </em>
+        </li>
+        <li>
+         <a href="/news/20190118153547754">
+          [마감 시황] 외국인 매수 늘면서 코스 ...
+         </a>
+         <em>
+          국민일보
+         </em>
+        </li>
+        <li>
+         <a href="/news/20190118153653803">
+          [마감 시황] 외국인 매수 늘면서 코스 ...
+         </a>
+         <em>
+          국민일보
+         </em>
+        </li>
+       </ul>
+       <ul class="fr">
+        <li>
+         <a href="/news/20190118153558764">
+          [마감 시황] 코스닥 전일 대비 9.9 ...
+         </a>
+         <em>
+          한국경제TV
+         </em>
+        </li>
+        <li>
+         <a href="/news/20190118153504724">
+          [마감 시황]  외국인 매수 우위..  ...
+         </a>
+         <em>
+          서울경제
+         </em>
+        </li>
+        <li>
+         <a href="/news/20190118101615742">
+          [특징주] 효성중공업, 수소충전소 확대 ...
+         </a>
+         <em>
+          한국경제TV
+         </em>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="rankingB" id="boxBestSearchs">
+      <div class="titB">
+       <h4>
+        인기 검색
+       </h4>
+      </div>
+      <ul class="list" id="boxTopSearchs">
+       <li>
+        <em class="ty01">
+         1
+        </em>
+        <a href="/quotes/A009320">
+         대우부품
+        </a>
+        <p class="up1" data-realtime-change-style="yes" data-realtime-trade-price="yes">
+         2,960
+         <i>
+          <i>
+           ↑
+          </i>
+         </i>
+        </p>
+        <span class="up1" data-realtime-change-ratio="yes" data-realtime-change-style="yes">
+         +29.82%
+        </span>
+       </li>
+       <li>
+        <em class="ty02">
+         2
+        </em>
+        <a href="/quotes/A068270">
+         셀트리온
+        </a>
+        <p class="up" data-realtime-change-style="yes" data-realtime-trade-price="yes">
+         201,000
+         <i>
+          <i>
+           ▲
+          </i>
+         </i>
+        </p>
+        <span class="up" data-realtime-change-ratio="yes" data-realtime-change-style="yes">
+         +2.81%
+        </span>
+       </li>
+       <li>
+        <em class="ty03">
+         3
+        </em>
+        <a href="/quotes/A005930">
+         삼성전자
+        </a>
+        <p class="up" data-realtime-change-style="yes" data-realtime-trade-price="yes">
+         42,300
+         <i>
+          <i>
+           ▲
+          </i>
+         </i>
+        </p>
+        <span class="up" data-realtime-change-ratio="yes" data-realtime-change-style="yes">
+         +0.83%
+        </span>
+       </li>
+       <li>
+        <em class="ty04">
+         4
+        </em>
+        <a href="/quotes/A059090">
+         미코
+        </a>
+        <p class="up1" data-realtime-change-style="yes" data-realtime-trade-price="yes">
+         6,590
+         <i>
+          <i>
+           ↑
+          </i>
+         </i>
+        </p>
+        <span class="up1" data-realtime-change-ratio="yes" data-realtime-change-style="yes">
+         +29.98%
+        </span>
+       </li>
+       <li>
+        <em class="ty05">
+         5
+        </em>
+        <a href="/quotes/A144620">
+         코오롱머티리얼
+        </a>
+        <p class="up" data-realtime-change-style="yes" data-realtime-trade-price="yes">
+         3,900
+         <i>
+          <i>
+           ▲
+          </i>
+         </i>
+        </p>
+        <span class="up" data-realtime-change-ratio="yes" data-realtime-change-style="yes">
+         +24.60%
+        </span>
+       </li>
+      </ul>
+      <ul class="list fr" id="boxHalfSearchs">
+       <li>
+        <em class="ty06">
+         6
+        </em>
+        <a href="/quotes/A035420">
+         NAVER
+        </a>
+        <p class="up" data-realtime-change-style="yes" data-realtime-trade-price="yes">
+         137,500
+         <i>
+          <i>
+           ▲
+          </i>
+         </i>
+        </p>
+        <span class="up" data-realtime-change-ratio="yes" data-realtime-change-style="yes">
+         +1.10%
+        </span>
+       </li>
+       <li>
+        <em class="ty07">
+         7
+        </em>
+        <a href="/quotes/A080470">
+         성창오토텍
+        </a>
+        <p class="up1" data-realtime-change-style="yes" data-realtime-trade-price="yes">
+         13,100
+         <i>
+          <i>
+           ↑
+          </i>
+         </i>
+        </p>
+        <span class="up1" data-realtime-change-ratio="yes" data-realtime-change-style="yes">
+         +29.70%
+        </span>
+       </li>
+       <li>
+        <em class="ty08">
+         8
+        </em>
+        <a href="/quotes/A234100">
+         세원
+        </a>
+        <p class="up1" data-realtime-change-style="yes" data-realtime-trade-price="yes">
+         3,450
+         <i>
+          <i>
+           ↑
+          </i>
+         </i>
+        </p>
+        <span class="up1" data-realtime-change-ratio="yes" data-realtime-change-style="yes">
+         +29.94%
+        </span>
+       </li>
+       <li>
+        <em class="ty09">
+         9
+        </em>
+        <a href="/quotes/A095190">
+         이엠코리아
+        </a>
+        <p class="up" data-realtime-change-style="yes" data-realtime-trade-price="yes">
+         10,250
+         <i>
+          <i>
+           ▲
+          </i>
+         </i>
+        </p>
+        <span class="up" data-realtime-change-ratio="yes" data-realtime-change-style="yes">
+         +0.49%
+        </span>
+       </li>
+       <li>
+        <em class="ty10">
+         10
+        </em>
+        <a href="/quotes/A009150">
+         삼성전기
+        </a>
+        <p class="up" data-realtime-change-style="yes" data-realtime-trade-price="yes">
+         94,600
+         <i>
+          <i>
+           ▲
+          </i>
+         </i>
+        </p>
+        <span class="up" data-realtime-change-ratio="yes" data-realtime-change-style="yes">
+         +1.07%
+        </span>
+       </li>
+      </ul>
+     </div>
+     <div class="rankingB line" id="boxTopSectors">
+      <div class="halfB">
+       <div class="titB">
+        <h4>
+         업종 상위 - 코스피
+        </h4>
+        <a class="btnMore" href="/domestic/sectors?market=KOSPI" title="더보기">
+         더보기
+        </a>
+       </div>
+       <ul class="list">
+        <li>
+         <em class="ty01">
+          1
+         </em>
+         <a class="txt" href="/domestic/sectors/D0011014">
+          의료정밀
+         </a>
+         <span class="up">
+          +2.69%
+         </span>
+         <a class="up" href="/quotes/A105840">
+          <i>
+           ▲
+          </i>
+          우진
+         </a>
+        </li>
+        <li>
+         <em class="ty02">
+          2
+         </em>
+         <a class="txt" href="/domestic/sectors/D0011009">
+          의약품
+         </a>
+         <span class="up">
+          +2.44%
+         </span>
+         <a class="up" href="/quotes/A170900">
+          <i>
+           ▲
+          </i>
+          동아에스티
+         </a>
+        </li>
+        <li>
+         <em class="ty03">
+          3
+         </em>
+         <a class="txt" href="/domestic/sectors/D0011012">
+          기계
+         </a>
+         <span class="up">
+          +2.36%
+         </span>
+         <a class="up" href="/quotes/A085310">
+          <i>
+           ▲
+          </i>
+          엔케이
+         </a>
+        </li>
+        <li>
+         <em class="ty04">
+          4
+         </em>
+         <a class="txt" href="/domestic/sectors/D0011016">
+          유통업
+         </a>
+         <span class="up">
+          +1.94%
+         </span>
+         <a class="up" href="/quotes/A009810">
+          <i>
+           ▲
+          </i>
+          엔케이물산
+         </a>
+        </li>
+        <li>
+         <em class="ty05">
+          5
+         </em>
+         <a class="txt" href="/domestic/sectors/D0011024">
+          증권
+         </a>
+         <span class="up">
+          +1.88%
+         </span>
+         <a class="up" href="/quotes/A001510">
+          <i>
+           ▲
+          </i>
+          SK증권
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="halfB fr">
+       <div class="titB">
+        <h4>
+         업종 상위 - 코스닥
+        </h4>
+        <a class="btnMore" href="/domestic/sectors?market=KOSDAQ" title="더보기">
+         더보기
+        </a>
+       </div>
+       <ul class="list">
+        <li>
+         <em class="ty01">
+          1
+         </em>
+         <a class="txt" href="/domestic/sectors/E4012075">
+          운송장비·부품
+         </a>
+         <span class="up">
+          +4.49%
+         </span>
+         <a class="up" href="/quotes/A234100">
+          <i>
+           ↑
+          </i>
+          세원
+         </a>
+        </li>
+        <li>
+         <em class="ty02">
+          2
+         </em>
+         <a class="txt" href="/domestic/sectors/E4012027">
+          유통
+         </a>
+         <span class="up">
+          +2.66%
+         </span>
+         <a class="up" href="/quotes/A038530">
+          <i>
+           ▲
+          </i>
+          골드퍼시픽
+         </a>
+        </li>
+        <li>
+         <em class="ty03">
+          3
+         </em>
+         <a class="txt" href="/domestic/sectors/E4012154">
+          디지털컨텐츠
+         </a>
+         <span class="up">
+          +2.64%
+         </span>
+         <a class="up" href="/quotes/A225570">
+          <i>
+           ↑
+          </i>
+          넷게임즈
+         </a>
+        </li>
+        <li>
+         <em class="ty04">
+          4
+         </em>
+         <a class="txt" href="/domestic/sectors/E4012151">
+          통신서비스
+         </a>
+         <span class="up">
+          +2.23%
+         </span>
+         <a class="up" href="/quotes/A039290">
+          <i>
+           ▲
+          </i>
+          인포뱅크
+         </a>
+        </li>
+        <li>
+         <em class="ty05">
+          5
+         </em>
+         <a class="txt" href="/domestic/sectors/E4012012">
+          기타서비스
+         </a>
+         <span class="up">
+          +2.14%
+         </span>
+         <a class="up" href="/quotes/A043910">
+          <i>
+           ▲
+          </i>
+          자연과환경
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <div class="rightW" id="boxRightSidebar">
+     <div class="btnB">
+      <a href="javascript:void(0)" id="btnAllQuotes" title="전 종목 시세 보기">
+       <i>
+        -
+       </i>
+       전 종목 시세 보기
+      </a>
+     </div>
+     <div class="myB" id="boxMy">
+      <ul class="tab box_tabs">
+       <li>
+        <a class="on" href="javascript:void(0)" title="나의 관심">
+         나의 관심
+        </a>
+       </li>
+       <li>
+        <a class="" href="javascript:void(0)" title="최근 검색">
+         최근 검색
+        </a>
+       </li>
+      </ul>
+      <div class="box_contents">
+       <div style="display: block;">
+        <div class="box">
+         <span>
+          <p>
+           로그인 하시면,
+           <br/>
+           나의 관심 리스트를
+           <br/>
+           볼 수 있습니다.
+          </p>
+          <a href="https://logins.daum.net/accounts/loginform.do?&amp;url=http%3A%2F%2Ffinance.daum.net%2F" title="로그인">
+           로그인
+          </a>
+         </span>
+        </div>
+       </div>
+       <div style="display: none;">
+       </div>
+      </div>
+     </div>
+     <div class="sponsor">
+      <ins class="daum_ddn_area" data-ad-action="" data-ad-actioninterval="0" data-ad-bordercolor="#e5e5e5" data-ad-height="250" data-ad-init="done" data-ad-refreshlimit="0" data-ad-requestid="4991a3a1-1c7a-11e9-bb25-d094662cd4d7" data-ad-rfinterval="0" data-ad-status="loading" data-ad-unit="00872" data-ad-width="250" id="kakao_ad_WT69xa_4763" style="display: inline-block; width: 250px; text-decoration: none; min-width: 250px; min-height: 250px; height: 250px;">
+       <div style="overflow: hidden; position: relative; height: 250px;">
+        <iframe allowtransparency="true" frameborder="0" hspace="0" id="adfit_frame_id_nK9znE_4776" marginheight="0" marginwidth="0" name="adfit_frame_id_nK9znE_4776" scrolling="no" srcdoc="&lt;style type=&quot;text/css&quot;&gt;body {background-color:#fff;font-family:&quot;돋움&quot;,dotum,sans-serif;font-size:11px; text-align:center; color:#cecece; letter-spacing:-1px;-webkit-touch-callout: none;margin:0;padding:0}&lt;/style&gt;
+&lt;!doctype html&gt;
+&lt;html lang=&quot;ko&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;/&gt;
+    &lt;meta http-equiv=&quot;imagetoolbar&quot; content=&quot;no&quot;/&gt;
+    &lt;meta http-equiv=&quot;imagetoolbar&quot; content=&quot;false&quot;/&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;/&gt;
+    &lt;meta name=&quot;robots&quot; content=&quot;noarchive&quot;/&gt;
+    &lt;meta name=&quot;robots&quot; content=&quot;nosnippet&quot;/&gt;
+    &lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;/&gt;
+    &lt;meta name=&quot;robots&quot; content=&quot;nofollow&quot;/&gt;
+    &lt;meta name=&quot;robots&quot; content=&quot;noodp&quot;/&gt;
+    &lt;meta name=&quot;google&quot; content=&quot;notranslate&quot;/&gt; 
+    &lt;meta name=&quot;ad.size&quot; content=&quot;width=250,height=250&quot;/&gt;
+
+    &lt;title&gt;Kakao Advertisement&lt;/title&gt;
+
+    &lt;style type=&quot;text/css&quot;&gt;*{margin:0;padding:0}body{background-color:#fff;font-family:&quot;돋움&quot;,dotum,sans-serif;font-size:11px;color:#cecece;letter-spacing:-1px;-webkit-touch-callout:none}&lt;/style&gt;
+
+    &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//t1.daumcdn.net&quot;/&gt;
+    &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//analytics.ad.daum.net&quot;/&gt;
+    &lt;link rel=&quot;preload&quot; href=&quot;//t1.daumcdn.net/b2/creative/41789/6ffc17f3c50baa5242fa64bbdaff7aaf.jpg&quot; as=&quot;image&quot;/&gt;
+&lt;/head&gt;
+&lt;body leftmargin=&quot;0&quot; topmargin=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; style=&quot;background-color:transparent; width: 100%; text-align: center;&quot;&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;a{text-decoration:none;color:#fff;}.ad_icon{width:20px;height:20px;position:absolute;top:1px;right:1px;cursor:pointer;border:0}.ad_img_background{text-align:center;background-position:center center;background-repeat:repeat-x}&lt;/style&gt;
+&lt;div id=&quot;kakaoAdWrap&quot; style=&quot;position: relative;overflow: hidden;width:100%;height:250px&quot;&gt;
+        &lt;a id=&quot;landingLink&quot; href=&quot;//analytics.ad.daum.net/clk?wa=fw90mZiEHi3MsxzPyWARmg&amp;enc=3-LaDtcl-btOZuYt6wdu_z-6mSdCapKbdsO6GsECAF98on1HwF9mFRelhMYux9cxh7YfmgmIQnS8s8Npyum41cuP3e9xkkDJ02OpQcpqOmewtvpFB8aQ6uE1ve73V6v0pHA8SjP93CMpwOFNrP5-W5QdJLAbgWJGoKR4hm3qDT8UNA6xduJoi-f17PTn202O-RDEy5qJNwAyJz3q4lNDF-_Qr3aT8-NipeZdDCMRhQRBjGbvE8TK_Iz0uYmLA-dirZNA-qFBFbt0c1RvcbKXb0TmJkH6Lkt37PIjw_uI0fALTaySv10oXZfgHQJtygJ5qNBthmxMO1SDC9xyL7HLow_QmRRW1jLMQ6k3h5qK_NnDQNhI186FwMDB9Hzlj-0gqUowzhJFyiIQK24Klto-Q0_0_ULBgBqgp5H_jjcJXwXiE0mRv9bDXFnNTX3UjzSkl4PWb5lfmmTSS8lLvom99X7TvLtXnNDUt1NAaQpyh36MmKTZ46ordqI541Q84mQ05T58A5q5Qq0-hH9gOJc7Af8vIwBX99O8F4NX84kDkz9sw-n3syBZuX534jF4gbNNWUxff4Rdk7r_ieNvAT534ratztLkOFxHbwjPY7Crf8PJtPsjcakKRgMaE-CqUQBE&quot;  style=&quot;display:block;height:250px;background:&quot; target=&quot;_blank&quot;&gt;
+        &lt;span class=&quot;ad_img_background&quot;&gt;
+            &lt;img src=&quot;//t1.daumcdn.net/b2/creative/41789/6ffc17f3c50baa5242fa64bbdaff7aaf.jpg&quot;
+                 border=&quot;0&quot;
+                 alt=&quot;광고 굿네이버스 난방비 지원 캠페인&quot;
+                 width=&quot;250&quot; height=&quot;250&quot;
+                 style=&quot;display:block;margin:0 auto;&quot;
+            /&gt;
+        &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a href=&quot;http://info.ad.daum.net/optout.do&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;ad_icon&quot; src=&quot;//t1.daumcdn.net/b2/templates/image/opt_out_30.png&quot; alt=&quot;kakao 광고안내&quot;&gt;&lt;/a&gt;
+    &lt;img style=&quot;visibility:hidden;display:none;&quot; src=&quot;//analytics.ad.daum.net/imp?wa=fw90mZiEHi3MsxzPyWARmg&amp;enc=3-LaDtcl-btOZuYt6wdu_z-6mSdCapKbdsO6GsECAF98on1HwF9mFRelhMYux9cxh7YfmgmIQnS8s8Npyum41cuP3e9xkkDJ02OpQcpqOmewtvpFB8aQ6uE1ve73V6v0pHA8SjP93CMpwOFNrP5-W5QdJLAbgWJGoKR4hm3qDT8UNA6xduJoi-f17PTn202OC7OmzS-J_5ytYKh4MdDT9YK1Gt7yI3PwBhyIGO8NLOftruzPTlUMm10zo4QAn5ed&quot;/&gt;
+&lt;/div&gt;
+
+
+    &lt;script type=&quot;text/javascript&quot;&gt;!function(){for(var e=(&quot;addEventListener&quot;in window),t=document.getElementsByTagName(&quot;A&quot;),n=0;n!==t.length;n++)/analytics[-test]*\.ad\.daum\.net/.test(t[n].href)&amp;&amp;(e?t[n].addEventListener(&quot;click&quot;,o,!1):t[n].attachEvent(&quot;onclick&quot;,o,!1));function o(e){for(var t=e||window.event,n=(t.offsetX||0)+&quot;x&quot;+(t.offsetY||0),o=Math.max(document.body.clientWidth,document.documentElement.offsetWidth)+&quot;x&quot;+Math.max(document.body.clientHeight,document.documentElement.offsetHeight),a=e.srcElement||e.target,d=!1;a&amp;&amp;(!a.nodeName||&quot;a&quot;!==a.nodeName.toLowerCase());)a=a.parentNode;&quot;href&quot;in a&amp;&amp;(d=-1!==a.href.indexOf(&quot;?&quot;),-1===a.href.indexOf(&quot;oxy=&quot;)?a.href+=(d?&quot;&amp;&quot;:&quot;?&quot;)+&quot;oxy=&quot;+n+&quot;&amp;wh=&quot;+o:a.href=a.href.replace(/(oxy=)[^\&amp;]+/,&quot;$1&quot;+n).replace(/(wh=)[^\&amp;]+/,&quot;$1&quot;+o))}}();&lt;/script&gt;
+
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    try {
+        window.SENTRY_SDK = {
+            url: 'https://t1.daumcdn.net/b2/ravenjs/3.22.1/raven.min.js',
+            dsn: 'https://05ea1f05c0e345febbcc38bd9cecfc4f@sentry.kakao.com/1192'
+        }
+        ;(function(a,b,g,e,h){var k=a.SENTRY_SDK,f=function(a){f.data.push(a)};f.data=[];var l=a[e];a[e]=function(c,b,e,d,h){f({e:[].slice.call(arguments)});l&amp;&amp;l.apply(a,arguments)};var m=a[h];a[h]=function(c){f({p:c.reason});m&amp;&amp;m.apply(a,arguments)};var n=b.getElementsByTagName(g)[0];b=b.createElement(g);b.src=k.url;b.crossorigin=&quot;anonymous&quot;;b.addEventListener(&quot;load&quot;,function(){try{a[e]=l;a[h]=m;var c=f.data,b=a.Raven;b.config(k.dsn,k.options).install();var g=a[e];if(c.length)for(var d=0;d&lt;c.length;d++)c[d].e?g.apply(b.TraceKit,c[d].e):c[d].p&amp;&amp;b.captureException(c[d].p)}catch(p){console.log(p)}});n.parentNode.insertBefore(b,n)})(window,document,&quot;script&quot;,&quot;onerror&quot;,&quot;onunhandledrejection&quot;);
+    } catch (e) {
+        /* ignore sentry */
+    }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;" style="min-width: 250px; width: 250px; min-height: 250px; height: 250px; position: absolute; z-index: 1; left: 0px; top: 0px;" vspace="0">
+        </iframe>
+       </div>
+      </ins>
+     </div>
+    </div>
+   </div>
+   <div class="investmentB">
+    <div class="center" id="boxColumns">
+     <div class="titB">
+      <h4>
+       투자정보
+      </h4>
+     </div>
+     <div class="fl">
+      <div class="thumb">
+       <a href="/investment/columns/7105?type=financial_technology">
+        <img alt="" src="https://t1.daumcdn.net/thumb/C200x224/?fname=http%3A%2F%2Fcfile87.uf.daum.net%2Fimage%2F99336E4E5C3DBC98368EBF"/>
+       </a>
+      </div>
+      <div class="txt">
+       <h5>
+        <a href="/investment/financial_technology">
+         재테크이야기
+         <i>
+          -
+         </i>
+        </a>
+       </h5>
+       <strong>
+        <a href="/investment/columns/7105?type=financial_technology">
+         피해야할 재테크 방법-lovefund(財talk)Best 112회
+        </a>
+       </strong>
+       <a class="view" href="/investment/columns/7105?type=financial_technology" title="뷰">
+        <i>
+         -
+        </i>
+        3,011
+       </a>
+       <ul>
+        <li>
+         <a href="/investment/columns/7098?type=financial_technology">
+          재테크, 가족간의 화목이 전제되야-lovefund(財talk)Best 109회
+         </a>
+        </li>
+        <li>
+         <a href="/investment/columns/7090?type=financial_technology">
+          금융상품 혈연 마케팅,달라져야만 한다-lovefund(財talk)BEST104회
+         </a>
+        </li>
+        <li>
+         <a href="/investment/columns/7084?type=financial_technology">
+          각자도생 시대에 재산 관리-lovefund(財talk)BEST 101회
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="fr">
+      <div class="thumb">
+       <a href="/investment/columns/7108?type=stock_market">
+        <img alt="" src="https://t1.daumcdn.net/thumb/C200x224/?fname=http%3A%2F%2Fcfile8.uf.daum.net%2Fimage%2F998AC6485C414B782F3791"/>
+       </a>
+      </div>
+      <div class="txt">
+       <h5>
+        <a href="/investment/stock_market">
+         증시칼럼
+         <i>
+          -
+         </i>
+        </a>
+       </h5>
+       <strong>
+        <a href="/investment/columns/7108?type=stock_market">
+         주식투자원칙 정립 4편 : 시장 밸류 기반의 자산배분전략
+        </a>
+       </strong>
+       <a class="view" href="/investment/columns/7108?type=stock_market" title="뷰">
+        <i>
+         -
+        </i>
+        969
+       </a>
+       <ul>
+        <li>
+         <a href="/investment/columns/7107?type=stock_market">
+          증권거래세 폐지논란, 이보다 주식양도세 현실화가 더 큰 이슈
+         </a>
+        </li>
+        <li>
+         <a href="/investment/columns/7106?type=stock_market">
+          증시/경제분석을 하는 이유 : 투자원칙을 지키기 위해
+         </a>
+        </li>
+        <li>
+         <a href="/investment/columns/7104?type=stock_market">
+          주가지수 2000p에서 지지가 강한 이유 : 성장한 시장 가치
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mainB last">
+    <div class="leftW max">
+     <div class="rankingB" id="boxMarketTrend">
+      <div class="titB">
+       <h4>
+        마켓 트렌드
+       </h4>
+       <em id="lastTradeDate">
+        당일기준: 19.01.18
+       </em>
+      </div>
+      <div class="tab">
+       <ul class="box_tabs">
+        <li>
+         <a class="on" href="javascript:void(0)" title="상승률 상위">
+          상승률 상위
+         </a>
+        </li>
+        <li>
+         <a class="" href="javascript:void(0)" title="하락률 상위">
+          하락률 상위
+         </a>
+        </li>
+        <li>
+         <a class="" href="javascript:void(0)" title="외국인 순매수">
+          외국인 순매수
+         </a>
+        </li>
+        <li>
+         <a class="" href="javascript:void(0)" title="기관 순매수">
+          기관 순매수
+         </a>
+        </li>
+        <li>
+         <a class="" href="javascript:void(0)" title="거래량">
+          거래량
+         </a>
+        </li>
+        <li>
+         <a class="" href="javascript:void(0)" title="시가총액">
+          시가총액
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="box_contents">
+       <div style="display: block;">
+        <div class="halfB">
+         <div class="titB">
+          <h5>
+           코스피
+          </h5>
+         </div>
+         <ul class="list boxKospi">
+          <li>
+           <em class="ty01">
+            1
+           </em>
+           <a class="txt" href="/quotes/A009320">
+            대우부품
+           </a>
+           <p data-realtime-trade-price="yes">
+            2,960
+           </p>
+           <span class="num up1" data-realtime-change-price="yes">
+            <i>
+             ↑
+            </i>
+            680
+           </span>
+           <span class="up1" data-realtime-change-ratio="yes">
+            +29.82%
+           </span>
+           <p class="num" data-realtime-acc-trade-volume="yes">
+            20,099,739
+           </p>
+          </li>
+          <li>
+           <em class="ty02">
+            2
+           </em>
+           <a class="txt" href="/quotes/A009680">
+            모토닉
+           </a>
+           <p data-realtime-trade-price="yes">
+            13,150
+           </p>
+           <span class="num up" data-realtime-change-price="yes">
+            <i>
+             ▲
+            </i>
+            2,600
+           </span>
+           <span class="up" data-realtime-change-ratio="yes">
+            +24.64%
+           </span>
+           <p class="num" data-realtime-acc-trade-volume="yes">
+            3,006,756
+           </p>
+          </li>
+          <li>
+           <em class="ty03">
+            3
+           </em>
+           <a class="txt" href="/quotes/A144620">
+            코오롱머티리얼
+           </a>
+           <p data-realtime-trade-price="yes">
+            3,900
+           </p>
+           <span class="num up" data-realtime-change-price="yes">
+            <i>
+             ▲
+            </i>
+            770
+           </span>
+           <span class="up" data-realtime-change-ratio="yes">
+            +24.60%
+           </span>
+           <p class="num" data-realtime-acc-trade-volume="yes">
+            11,269,485
+           </p>
+          </li>
+          <li>
+           <em class="ty04">
+            4
+           </em>
+           <a class="txt" href="/quotes/A011230">
+            삼화전자
+           </a>
+           <p data-realtime-trade-price="yes">
+            3,210
+           </p>
+           <span class="num up" data-realtime-change-price="yes">
+            <i>
+             ▲
+            </i>
+            610
+           </span>
+           <span class="up" data-realtime-change-ratio="yes">
+            +23.46%
+           </span>
+           <p class="num" data-realtime-acc-trade-volume="yes">
+            3,135,553
+           </p>
+          </li>
+          <li>
+           <em class="ty05">
+            5
+           </em>
+           <a class="txt" href="/quotes/A010770">
+            평화홀딩스
+           </a>
+           <p data-realtime-trade-price="yes">
+            8,950
+           </p>
+           <span class="num up" data-realtime-change-price="yes">
+            <i>
+             ▲
+            </i>
+            1,700
+           </span>
+           <span class="up" data-realtime-change-ratio="yes">
+            +23.45%
+           </span>
+           <p class="num" data-realtime-acc-trade-volume="yes">
+            6,375,971
+           </p>
+          </li>
+         </ul>
+        </div>
+        <div class="halfB fr">
+         <div class="titB">
+          <h5>
+           코스닥
+          </h5>
+         </div>
+         <ul class="list boxKosdaq">
+          <li>
+           <em class="ty01">
+            1
+           </em>
+           <a class="txt" href="/quotes/A059090">
+            미코
+           </a>
+           <p data-realtime-trade-price="yes">
+            6,590
+           </p>
+           <span class="num up1" data-realtime-change-price="yes">
+            <i>
+             ↑
+            </i>
+            1,520
+           </span>
+           <span class="up1" data-realtime-change-ratio="yes">
+            +29.98%
+           </span>
+           <p class="num" data-realtime-acc-trade-volume="yes">
+            12,822,005
+           </p>
+          </li>
+          <li>
+           <em class="ty02">
+            2
+           </em>
+           <a class="txt" href="/quotes/A234100">
+            세원
+           </a>
+           <p data-realtime-trade-price="yes">
+            3,450
+           </p>
+           <span class="num up1" data-realtime-change-price="yes">
+            <i>
+             ↑
+            </i>
+            795
+           </span>
+           <span class="up1" data-realtime-change-ratio="yes">
+            +29.94%
+           </span>
+           <p class="num" data-realtime-acc-trade-volume="yes">
+            19,819,151
+           </p>
+          </li>
+          <li>
+           <em class="ty03">
+            3
+           </em>
+           <a class="txt" href="/quotes/A080470">
+            성창오토텍
+           </a>
+           <p data-realtime-trade-price="yes">
+            13,100
+           </p>
+           <span class="num up1" data-realtime-change-price="yes">
+            <i>
+             ↑
+            </i>
+            3,000
+           </span>
+           <span class="up1" data-realtime-change-ratio="yes">
+            +29.70%
+           </span>
+           <p class="num" data-realtime-acc-trade-volume="yes">
+            1,270,374
+           </p>
+          </li>
+          <li>
+           <em class="ty04">
+            4
+           </em>
+           <a class="txt" href="/quotes/A225570">
+            넷게임즈
+           </a>
+           <p data-realtime-trade-price="yes">
+            13,150
+           </p>
+           <span class="num up1" data-realtime-change-price="yes">
+            <i>
+             ↑
+            </i>
+            3,000
+           </span>
+           <span class="up1" data-realtime-change-ratio="yes">
+            +29.56%
+           </span>
+           <p class="num" data-realtime-acc-trade-volume="yes">
+            10,132,884
+           </p>
+          </li>
+          <li>
+           <em class="ty05">
+            5
+           </em>
+           <a class="txt" href="/quotes/A012860">
+            서연전자
+           </a>
+           <p data-realtime-trade-price="yes">
+            1,985
+           </p>
+           <span class="num up" data-realtime-change-price="yes">
+            <i>
+             ▲
+            </i>
+            395
+           </span>
+           <span class="up" data-realtime-change-ratio="yes">
+            +24.84%
+           </span>
+           <p class="num" data-realtime-acc-trade-volume="yes">
+            3,549,807
+           </p>
+          </li>
+         </ul>
+        </div>
+       </div>
+       <div style="display: none;">
+       </div>
+       <div style="display: none;">
+       </div>
+       <div style="display: none;">
+       </div>
+       <div style="display: none;">
+       </div>
+       <div style="display: none;">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <script>
+    requirejs(["/dist/daum/app/config.js?v=1547628623"], function (common) {
+        require(["app/home/index"]);
+    });
+   </script>
+   <div class="footer">
+    <span>
+     <div class="fl">
+      <ul>
+       <li>
+        <a href="http://policy.daum.net/info/info" target="_blank" title="서비스 약관/정책">
+         서비스 약관/정책
+        </a>
+       </li>
+       <li>
+        <a href="http://cs.daum.net/faq/19.html" target="_blank" title="금융 고객센터">
+         금융 고객센터
+        </a>
+       </li>
+       <li>
+        <a href="https://cs.daum.net/question/19.html" target="_blank" title="금융 문의하기">
+         금융 문의하기
+        </a>
+       </li>
+       <li>
+        <a href="http://blog.daum.net/daumfinance/" target="_blank" title="공지사항">
+         공지사항
+        </a>
+       </li>
+      </ul>
+      <p>
+       카카오가 제공하는 증권정보는 단순히 정보의 제공을 목적으로 하고 있으며, 사이트에서 제공되는 정보는 오류 및 지연이
+       <br/>
+       발생될 수 있습니다. 제공된 정보이용에 따르는 책임은 이용자 본인에게 있으며, 카카오는 이용자의 투자결과에 따른
+       <br/>
+       법적 책임을 지지 않습니다.
+      </p>
+     </div>
+     <div class="fr">
+      <p>
+       위 내용에 대한 저작권 및 법적 책임은 자료제공사 또는
+       <br/>
+       글쓴이에 있으며 카카오의 입장과 다를 수 있습니다.
+      </p>
+      <p>
+       Copyright (C) Kakao Corp. All rights reserved.
+      </p>
+     </div>
+    </span>
+   </div>
+   <div id="kakaoWrap">
+    <div id="wrapMinidaum">
+     <div id="minidaum">
+      <strong class="minidaum_logo">
+       <a class="img_logo" href="http://www.daum.net/?nil_profile=mini&amp;nil_src=daum" target="_top">
+        Daum
+       </a>
+      </strong>
+      <div class="minidaum_gnb">
+       <div id="minidaumUser">
+        <a href="https://logins.daum.net/accounts/loginform.do?url=http%3A%2F%2Ffinance.daum.net%2F" id="btnMinidaumLogin" target="_top">
+         로그인
+        </a>
+       </div>
+       <h2 class="screen_out">
+        서비스 바로가기
+       </h2>
+       <div id="minidaumService">
+        <ul class="minidaum_service_list">
+         <li class="minidaum_mail" id="minidaumMail">
+          <a href="http://mail.daum.net/?nil_profile=mini&amp;nil_src=mail" target="_top">
+           메일
+          </a>
+          <a class="minidaum_count" href="http://mail.daum.net/?nil_profile=mini&amp;nil_src=mail_alarm" id="minidaumMailCnt" target="_top">
+          </a>
+         </li>
+         <li class="minidaum_cafe" id="minidaumCafe">
+          <a href="http://cafe.daum.net/?nil_profile=mini&amp;nil_src=cafe" target="_top">
+           카페
+          </a>
+          <a class="minidaum_count" href="http://cafe.daum.net/?nil_profile=mini&amp;nil_src=cafe_alarm" id="minidaumCafeCnt" target="_top">
+          </a>
+         </li>
+         <li class="minidaum_news">
+          <a href="http://media.daum.net/?nil_profile=mini&amp;nil_src=news" target="_top">
+           뉴스
+          </a>
+         </li>
+         <li class="minidaum_shopping">
+          <a href="http://shopping.daum.net/main.daum?nil_profile=mini&amp;nil_src=shophow">
+           쇼핑
+          </a>
+         </li>
+        </ul>
+        <a href="http://www.daum.net/doc/sitemap/" id="minidaumMore" target="_top">
+         <span class="screen_out">
+          전체서비스
+         </span>
+         더보기
+        </a>
+       </div>
+      </div>
+      <div id="minidaumMoreLayer">
+       <strong class="minidaum_idx minidaum_idx1">
+        더보기 1열
+       </strong>
+       <ul class="minidaum_list_group minidaum_list_group1">
+        <li>
+         <a href="https://together.kakao.com/" target="_top">
+          같이가치
+         </a>
+        </li>
+        <li>
+         <a href="http://game.daum.net/?nil_profile=mini&amp;nil_src=game" target="_top">
+          게임
+         </a>
+        </li>
+        <li>
+         <a href="http://finance.daum.net/?nil_profile=mini&amp;nil_src=finance" target="_top">
+          금융
+         </a>
+        </li>
+        <li>
+         <a href="http://media.daum.net/?nil_profile=mini&amp;nil_src=news" target="_top">
+          뉴스
+         </a>
+        </li>
+        <li>
+         <a href="http://webtoon.daum.net/?nil_profile=mini&amp;nil_src=cartoon" target="_top">
+          다음웹툰
+         </a>
+        </li>
+        <li>
+         <a href="http://local.daum.net/map/index.jsp?cx=494917&amp;cy=1128521&amp;level=6&amp;panoid=107438&amp;pan=348.6&amp;tilt=-8.6&amp;map_type=TYPE_SKYVIEW&amp;map_hybrid=true&amp;map_attribute=ROADVIEW&amp;screenMode=normal&amp;nil_profile=mini&amp;nil_src=roadview" target="_top">
+          로드뷰
+         </a>
+        </li>
+       </ul>
+       <strong class="minidaum_idx minidaum_idx2">
+        더보기 2열
+       </strong>
+       <ul class="minidaum_list_group minidaum_list_group2">
+        <li>
+         <a href="http://miznet.daum.net/?nil_profile=mini&amp;nil_src=miznet" target="_top">
+          미즈넷
+         </a>
+        </li>
+        <li>
+         <a href="http://search.daum.net/search?w=tot&amp;DA=YZR&amp;t__nil_searchbox=btn&amp;sug=&amp;sugo=&amp;sq=&amp;o=&amp;q=%EB%B0%A9%EA%B8%88%EA%B7%B8%EA%B3%A1" target="_top">
+          방금그곡
+         </a>
+        </li>
+        <li>
+         <a href="http://100.daum.net/" target="_top">
+          백과사전
+         </a>
+        </li>
+        <li>
+         <a href="https://realty.daum.net/" target="_top">
+          부동산
+         </a>
+        </li>
+        <li>
+         <a href="https://brunch.co.kr/" target="_top">
+          브런치
+         </a>
+        </li>
+        <li>
+         <a href="http://blog.daum.net/?nil_profile=mini&amp;nil_src=blog" target="_top">
+          블로그
+         </a>
+        </li>
+       </ul>
+       <strong class="minidaum_idx minidaum_idx3">
+        더보기 3열
+       </strong>
+       <ul class="minidaum_list_group minidaum_list_group3">
+        <li>
+         <a href="http://sports.media.daum.net/?nil_profile=mini&amp;nil_src=sports" target="_top">
+          스포츠
+         </a>
+        </li>
+        <li>
+         <a href="http://shopping.daum.net/?nil_profile=mini&amp;nil_src=shopping" target="_top">
+          쇼핑
+         </a>
+        </li>
+        <li>
+         <a href="http://agora.media.daum.net/?nil_profile=mini&amp;nil_src=agora" target="_top">
+          아고라
+         </a>
+        </li>
+        <li>
+         <a href="http://alldic.daum.net/?nil_profile=mini&amp;nil_src=dictionary" target="_top">
+          어학사전
+         </a>
+        </li>
+        <li>
+         <a href="http://media.daum.net/entertain/?nil_profile=mini&amp;nil_src=entertain" target="_top">
+          연예
+         </a>
+        </li>
+        <li>
+         <a href="http://movie.daum.net/?nil_profile=mini&amp;nil_src=movie" target="_top">
+          영화
+         </a>
+        </li>
+       </ul>
+       <strong class="minidaum_idx minidaum_idx4">
+        더보기 4열
+       </strong>
+       <ul class="minidaum_list_group minidaum_list_group4">
+        <li>
+         <a href="http://auto.daum.net/?nil_profile=mini&amp;nil_src=auto" target="_top">
+          자동차
+         </a>
+        </li>
+        <li>
+         <a href="http://local.daum.net/map/?nil_profile=mini&amp;nil_src=map" target="_top">
+          지도
+         </a>
+        </li>
+        <li>
+         <a href="http://addrbook.daum.net/aplus/web/top.do#GoTop" target="_top">
+          주소록
+         </a>
+        </li>
+        <li>
+         <a href="http://search.daum.net/search?w=tot&amp;q=%EC%A6%9D%EA%B6%8C" target="_top">
+          주식시세
+         </a>
+        </li>
+       </ul>
+       <strong class="minidaum_idx minidaum_idx5">
+        더보기 5열
+       </strong>
+       <ul class="minidaum_list_group minidaum_list_group5">
+        <li>
+         <a href="http://tv.kakao.com/?nil_profile=mini&amp;nil_src=kakaotv" target="_top">
+          카카오TV
+         </a>
+        </li>
+        <li>
+         <a href="http://cafe.daum.net/?nil_profile=mini&amp;nil_src=cafe" target="_top">
+          카페
+         </a>
+        </li>
+        <li>
+         <a href="http://www.tistory.com/?nil_profile=mini&amp;nil_src=tistory" target="_top">
+          티스토리
+         </a>
+        </li>
+        <li>
+         <a href="http://tip.daum.net/?nil_profile=mini&amp;nil_src=knowledge" target="_top">
+          팁
+         </a>
+        </li>
+        <li class="last minidaum_all">
+         <a href="http://www.daum.net/doc/sitemap/?nil_profile=mini&amp;nil_src=all" target="_top">
+          전체보기
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="" id="minidaumRank">
+       <span class="minidaum_rank_tit">
+        실시간 이슈검색어
+       </span>
+       <ol class="minidaum_rank_list" id="minidaumRankList">
+        <li>
+         <span class="screen_out">
+          1위
+         </span>
+         <a class="minidaum_word" href="https://search.daum.net/search?w=tot&amp;q=%EC%9E%84%ED%95%98%EB%A3%A1&amp;rtmaxcoll=1TH&amp;quide=rissue&amp;nil_profile=mini&amp;nil_src=searchword1&amp;DA=22H" title="임하룡">
+          임하룡
+         </a>
+         <span class="minidaum_status minidaum_up">
+          상승
+         </span>
+         <span class="minidaum_num">
+          313
+         </span>
+        </li>
+        <li>
+         <span class="screen_out">
+          2위
+         </span>
+         <a class="minidaum_word" href="https://search.daum.net/search?w=tot&amp;q=ufc&amp;rtmaxcoll=1TH&amp;quide=rissue&amp;nil_profile=mini&amp;nil_src=searchword2&amp;DA=22H" title="ufc">
+          ufc
+         </a>
+         <span class="minidaum_status minidaum_up">
+          상승
+         </span>
+         <span class="minidaum_num">
+          82
+         </span>
+        </li>
+        <li>
+         <span class="screen_out">
+          3위
+         </span>
+         <a class="minidaum_word" href="https://search.daum.net/search?w=tot&amp;q=%EB%8D%B0%EB%AF%B8+%EB%AC%B4%EC%96%B4&amp;rtmaxcoll=1TH&amp;quide=rissue&amp;nil_profile=mini&amp;nil_src=searchword3&amp;DA=22H" title="데미 무어">
+          데미 무어
+         </a>
+         <span class="minidaum_status minidaum_up">
+          상승
+         </span>
+         <span class="minidaum_num">
+          74
+         </span>
+        </li>
+        <li>
+         <span class="screen_out">
+          4위
+         </span>
+         <a class="minidaum_word" href="https://search.daum.net/search?w=tot&amp;q=842%ED%9A%8C+%EB%A1%9C%EB%98%90+%EB%8B%B9%EC%B2%A8+%EB%B2%88%ED%98%B8&amp;rtmaxcoll=1TH&amp;quide=rissue&amp;nil_profile=mini&amp;nil_src=searchword4&amp;DA=22H" title="842회 로또 당..">
+          842회 로또 당..
+         </a>
+         <span class="minidaum_status minidaum_up">
+          상승
+         </span>
+         <span class="minidaum_num">
+          72
+         </span>
+        </li>
+        <li>
+         <span class="screen_out">
+          5위
+         </span>
+         <a class="minidaum_word" href="https://search.daum.net/search?w=tot&amp;q=%ED%99%8D%EC%97%AD&amp;rtmaxcoll=1TH&amp;quide=rissue&amp;nil_profile=mini&amp;nil_src=searchword5&amp;DA=22H" title="홍역">
+          홍역
+         </a>
+         <span class="minidaum_status minidaum_up">
+          상승
+         </span>
+         <span class="minidaum_num">
+          60
+         </span>
+        </li>
+        <li>
+         <span class="screen_out">
+          6위
+         </span>
+         <a class="minidaum_word" href="https://search.daum.net/search?w=tot&amp;q=%ED%98%B8%EC%8A%A4%ED%8B%B0%EC%A7%80&amp;rtmaxcoll=1TH&amp;quide=rissue&amp;nil_profile=mini&amp;nil_src=searchword6&amp;DA=22H" title="호스티지">
+          호스티지
+         </a>
+         <span class="minidaum_status minidaum_up">
+          상승
+         </span>
+         <span class="minidaum_num">
+          56
+         </span>
+        </li>
+        <li>
+         <span class="screen_out">
+          7위
+         </span>
+         <a class="minidaum_word" href="https://search.daum.net/search?w=tot&amp;q=%EC%82%AC%EB%9E%91%EA%B3%BC+%EC%98%81%ED%98%BC&amp;rtmaxcoll=1TH&amp;quide=rissue&amp;nil_profile=mini&amp;nil_src=searchword7&amp;DA=22H" title="사랑과 영혼">
+          사랑과 영혼
+         </a>
+         <span class="minidaum_status minidaum_up">
+          상승
+         </span>
+         <span class="minidaum_num">
+          60
+         </span>
+        </li>
+        <li>
+         <span class="screen_out">
+          8위
+         </span>
+         <a class="minidaum_word" href="https://search.daum.net/search?w=tot&amp;q=%EC%9D%B4%EC%9C%A0%EB%A6%AC&amp;rtmaxcoll=1TH&amp;quide=rissue&amp;nil_profile=mini&amp;nil_src=searchword8&amp;DA=22H" title="이유리">
+          이유리
+         </a>
+         <span class="minidaum_status minidaum_up">
+          상승
+         </span>
+         <span class="minidaum_num">
+          41
+         </span>
+        </li>
+        <li>
+         <span class="screen_out">
+          9위
+         </span>
+         <a class="minidaum_word" href="https://search.daum.net/search?w=tot&amp;q=%EB%94%9C%EB%9D%BC%EC%87%BC&amp;rtmaxcoll=1TH&amp;quide=rissue&amp;nil_profile=mini&amp;nil_src=searchword9&amp;DA=22H" title="딜라쇼">
+          딜라쇼
+         </a>
+         <span class="minidaum_status minidaum_up">
+          상승
+         </span>
+         <span class="minidaum_num">
+          41
+         </span>
+        </li>
+        <li>
+         <span class="screen_out">
+          10위
+         </span>
+         <a class="minidaum_word" href="https://search.daum.net/search?w=tot&amp;q=%EB%B2%A0%ED%8A%B8%EB%82%A8+%EC%B6%95%EA%B5%AC&amp;rtmaxcoll=1TH&amp;quide=rissue&amp;nil_profile=mini&amp;nil_src=searchword10&amp;DA=22H" title="베트남 축구">
+          베트남 축구
+         </a>
+         <span class="minidaum_status minidaum_up">
+          상승
+         </span>
+         <span class="minidaum_num">
+          35
+         </span>
+        </li>
+        <li class="minidaum_dummy">
+         <span class="screen_out">
+          1위
+         </span>
+         <a class="minidaum_word" href="https://search.daum.net/search?w=tot&amp;q=%EC%9E%84%ED%95%98%EB%A3%A1&amp;rtmaxcoll=1TH&amp;quide=rissue&amp;nil_profile=mini&amp;nil_src=searchword1&amp;DA=22H" title="임하룡">
+          임하룡
+         </a>
+         <span class="minidaum_status minidaum_up">
+          상승
+         </span>
+         <span class="minidaum_num">
+          313
+         </span>
+        </li>
+       </ol>
+      </div>
+     </div>
+    </div>
+   </div>
+   <script>
+    requirejs(["/dist/daum/app/config.js?v=1547628623"], function (common) {
+        require(["app/common/mini_daum"]);
+    });
+   </script>
+  </div>
+ </body>
+</html>
